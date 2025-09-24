@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #000000;
+  color: white;
+}
+
+header {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.Logo {
+  font-size: 3rem;
+  color: #36594c;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.Logo:hover {
+  transform: scale(1.3);
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 400;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #36594c;
+  border-bottom: 3px solid #36594c;
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9% 5rem;
+}
+
+.home {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8rem;
+  background-color: #000000;
+}
+
+.home .home-content h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1.3;
+  height: 4rem;
+}
+
+
+.home-content h3 {
+  font-size: 8rem;
+  font-weight: 1000;
+}
+
+.home-content p {
+  font-size: 2rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  background-color: transparent;
+  border: 0.2rem solid #017f66;
+  border-radius: 70%;
+  margin: 3rem 1.5rem 3rem 0;
+  width: 10rem;
+  height: 10rem;
+  color: #017f66;
+  transition: 0.5s ease;
+  flex-direction: column;
+ 
+}
+
+.social-icons a span{
+  font-size: 1.4rem;
+}
+
+.social-icons a:hover {
+  background-color: #016e57;
+  color: black;
+  transform: scale(1.3) translateY(-0.5rem);
+  box-shadow: 0 0 25px #004d38;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: black;
+  border: 0.2rem solid #08bebb;
+  border-radius: 4rem;
+  color: #06aca9;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  transition: 0.4s ease;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+/* botao */
+.btn:hover {
+  transform: scale(1.03);
+  background-color: #049a98;
+  color: black;
+  box-shadow: 0 0 25px #007674;
+}
+
+.Name span{
+  color:#36594c 
+}
+
+@media (max-width: 995px) {
+  nav {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    border-left: 3px solid #2a492b;
+    border-bottom: 3px solid #2a492b;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem;
+    background-color: black;
+    border-top: 0.1rem;
+  }
+  nav.active{
+    display: block;
+  }
+  nav a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  nav a:hover,
+  nav a.active {
+    padding: 1rem;
+    border-bottom: 0.5rem solid #016e57;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home {
+    gap: 4rem;
+  }
+}
+@media (max-width: 995px) {
+  .home {
+    flex-direction: column;
+    margin: 5rem 7rem;
+  }
+  .home .home-content h3 {
+    font-size: 3rem;
+  }
+  .home-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  .home-img img {
+    width: 70vh;
+    margin-top: 4rem;
+  }
+}
+/*ocultação do check box!!!!!!!!!!!!!!!!!!*/
+.menu-toggle {
+  display: none;
+}
+/*HAMBUGUER ICONS!!!!!!!!!!!!!!*/
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 101;
+}
+.menu-icon span {
+  display: block;
+  height: 4px;
+  background-color: #2a492b;
+}
+/*exibe o menu HABUEGHUER.......................................*/
+@media (max-width: 995px) {
+  .menu-icon {
+    display: flex;
+  }
+  #menu-toggle:checked ~ nav {
+    display: block;
+  }
+}
+
+.blocos h3 {
+  font-size: 7rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 5px solid #36594c;
+}
+
+.blocos p{
+  font-size: 4rem;
+  line-height: 1.7;
+  border-left: 1rem solid #017f66;
+  padding: 2rem;
+  border-radius: 8px;
+
+  
+}
+
+.blocos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skill-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  background-color: transparent;
+  border: 0.2rem solid #017f66;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+  width: 10rem;
+  height: 10rem;
+  color: #017f66;
+  transition: 0.5s ease;
+}
+
+.skill-icons a:hover {
+  background-color: #016e57;
+  color: black;
+  transform: scale(1.3) translateY(-0.5rem);
+  box-shadow: 0 0 25px #004d38;
+}
+
+.contatos form {
+  font-size: 2rem;
+  border-radius: 50%;
+  border: 3px solid #004d38;
+}
+
+form label{
+  font-size: 2rem;
+  border-bottom: 3px solid #004d38;
+}
+form input {
+  font-size: 2rem;
+  width: 50rem;
+  border-radius: 4px;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: white;
+  
+}
+
+form textarea {
+  height: 10rem;
+  width: 50rem;
+  border-radius: 4px;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: white;
+
+
+}
+
+.texto {
+  font-size: 2rem;
+  border-bottom: 3px solid #004d38;
+  width: 12rem;
+}
+
+
+
+#formulario {
+  border-left: 4px solid #007674
+}

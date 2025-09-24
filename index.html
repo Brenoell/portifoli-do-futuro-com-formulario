@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio profissional</title>
+    <meta name="description" content="Portifólio profissional" />
+    <meta
+      name="keywords"
+      content="Aluno, estagiário, escola, css, html, Breno, Ingles B2"
+    />
+    <meta name="author" content="Breno" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="Logo">Breno</a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#servicos" >Serviços</a>
+        <a href="#habilidades" >Habilidades</a>
+        <a href="#formacao" >Formação</a>
+        <a href="#experiencia" >Experiência</a>
+        <a href="#contatos" >Contatos</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-img">
+        
+      </div>
+      <div class="home-content">
+        <h1>Prazer,</h1>
+        <h3 class="Name">Meu nome é <span>Breno</span></h3>
+        <p>
+          Estudante, Desenvolvedor de Software e Back-end.
+        </p>
+        
+        <a class="btn" href="#contatos">Contate-me</a>
+      </div>
+    </section>
+    <SEction id="servicos" class="blocos">
+      <h3>Sobre mim</h3>
+      <p>Desenvolvedor Back-end, com experiência em resolução e desenvolvimento de softwares para empresas. Grande afinidade com Java, React, Goo e conhecimento em CSS e HTML. Moro em São Paulo, possuo facilidade em resolução de problemas, sou ativo em conversas e tenho um bom trabalho em equipe.  </p>
+    </SEction>
+    <section id="habilidades" class="blocos">
+      <h3>Habilidades</h3>
+      <div class="skill-icons">
+          <a href="#"><i class="fa-brands fa-java"></i></a>
+          <a href="#"><i class="fa-brands fa-html5"></i></a>
+          <a href="#"><i class="fa-brands fa-python"></i></a>
+          <a href="#"><i class="fa-brands fa-linux"></i></a>
+          <a href="#"><i class="fa-brands fa-windows"></i></a>
+          <a href="#"><i class="fa-brands fa-square-js"></i>
+          <a href="#"><i class="fa-brands fa-figma"></i></a>
+          
+      </div>
+    </section>
+    <section id="formacao" class="blocos">
+      <h3>Formação</h3>
+      <p>Cursos da Cisco, Amazon AWS, Google e Havard, e formação superior em Ánalise e desenvolvimento de sistemas na FIAP.</p>
+    </section>
+    <section id="experiencia" class="blocos">
+      <h3>Experiência</h3>
+      <p> Tive 5 anos de experiência em programação em Java em diversos bancos, tal como Itaú, NuBank e Bradesco. Além da produção de sites para pequenas empresas em FreeLance. Familiaridade com Windows Server, Linux, SQL, Python, JavaScript. Participando de projetos que envolvem automação de tarefas e melhoria da performance de sistemas com ênfase em  eficiencia.
+          </p>
+    </section>
+    <section id="contatos" class="blocos">
+      <h3>Contatos</h3>
+      <div class="social-icons">
+          <a href="https://br.linkedin.com/?mcid=6821526239111716925&src=go-pa&trk=sem-ga_campid.12619604099_asid.149519181115_crid.725790844702_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9196136&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=12619604099&gbraid=0AAAAABhL5JO6Len2FtHDxUCDI3HssRDA7&gclid=Cj0KCQjww4TGBhCKARIsAFLXndQ46iofw88EyMFQ4EsruPI72yF_G5V9DjsP9aPfdoyCEQg90jF3AywaAsVLEALw_wcB"><i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+          </a>
+          <a href="https://github.com/Brenoell/Futuro-portifolio-profissional"><i class="fa-brands fa-github"></i>
+          <span>Github</span>
+          </a>
+          <a href="https://workspace.google.com/intl/pt-BR/gmail/"><i class="fa-solid fa-envelope"></i>
+          <span>Gmail</span>
+          </a>
+          <a href="http://whatsapp.com/?lang=pt_BR"><i class="fa-brands fa-whatsapp"></i>
+          <span>Whatsapp</span>
+          </a>
+        </div>
+       
+          <br><br>
+        <form action="https://formsubmit.co/brenobell03@gmail.com" method="POST" id="Formulario" />
+      <!--Legenda para o INPUT-->
+      <label for="Nome" name="nome">Nome: </label>
+      <br /><br />
+      <!--caMPO input de Type Text-->
+      <input type="text" id="Nome" placeholder="Digite seu nome." required />
+      <br /><br />
+      <label for="email" name="email">E-mail: </label>
+      <br /><br />
+      <input
+        type="email"
+        id="email"
+        placeholder="Digite seu E-mail."
+        required
+      />
+      <br /><br />
+      <label for="Telefone">Telefone: </label>
+      <br /><br />
+      <input
+        type="text"
+        id="Telefone"
+        placeholder="Digite seu telefone."
+      />
+      <br /><br />
+    
+      <h2 class="texto">Mensagem: </h2>
+      <br>
+      <textarea name="msg" style="resize: none" rows="60" cols="40" placeholder="Encaminhe sua mensagem á mim"></textarea>
+      <br /><br />
+
+      <input type="submit" value="Ok">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/Futuro-portifolio-profissional-main/">
+      <input type="hidden" name="_captcha" value="false">
+
+    </form>
+    </section>
+  </body>
+</html>
